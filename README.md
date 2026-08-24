@@ -1,6 +1,6 @@
 # Emil Kriukov — GitHub Pages portfolio
 
-A dependency-free static portfolio designed for GitHub Pages.
+A dependency-free static research portfolio designed for GitHub Pages. The current version centers Eye1k as the North Star project, includes ongoing projects, a paper-linked career timeline, a teaching section, hobby science projects, a profile photo, and a PhD-opportunity callout.
 
 ## What is included
 
@@ -11,6 +11,8 @@ A dependency-free static portfolio designed for GitHub Pages.
 - `assets/eye1k-atlas.webp` — Eye1k project artwork
 - `assets/sccs-commitment.webp` — scCS project artwork
 - `assets/Emil_Kriukov_CV.pdf` — downloadable CV
+- `assets/Emil_Kriukov_CV.docx` — source CV document
+- `assets/emil-profile.webp` — profile photo
 - `assets/favicon.svg` — browser tab icon
 - `.nojekyll` — tells GitHub Pages to serve the site as plain static files
 
@@ -35,6 +37,8 @@ mcrewcow.github.io/
 ├── script.js
 └── assets/
     ├── Emil_Kriukov_CV.pdf
+    ├── Emil_Kriukov_CV.docx
+    ├── emil-profile.webp
     ├── favicon.svg
     ├── hero-retina-data.webp
     ├── eye1k-atlas.webp

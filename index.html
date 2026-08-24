@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#07090d" />
-  <meta name="description" content="Emil Kriukov — computational biologist studying cell fate, retinal development, regeneration, and single-cell systems." />
+  <meta name="description" content="Emil Kriukov — computational biologist using single-cell atlases and quantitative modeling to discover therapeutic targets for vision restoration." />
   <meta property="og:title" content="Emil Kriukov — Computational Biology" />
-  <meta property="og:description" content="Single-cell atlases, cell-fate modeling, retinal development, regeneration, and computational biology." />
+  <meta property="og:description" content="Single-cell atlases, retinal systems, cell-fate modeling, and computational biology for vision restoration." />
   <meta property="og:type" content="website" />
   <title>Emil Kriukov — Computational Biology</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -23,13 +23,15 @@
       <span class="brand-mark">EK</span>
       <span class="brand-copy">
         <strong>Emil Kriukov</strong>
-        <small>Computational biology · retinal systems</small>
+        <small>Computational biology · vision restoration</small>
       </span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#goal">Goal</a>
+      <a href="#goal">Eye1k</a>
       <a href="#projects">Projects</a>
       <a href="#timeline">Timeline</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#hobbies">Hobby projects</a>
       <a href="#toolbox">Toolbox</a>
     </nav>
     <a class="header-cta" href="assets/Emil_Kriukov_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
@@ -38,13 +40,23 @@
   <main>
     <section class="hero section-shell" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="status-dot"></span> Lead Bioinformatician · UPMC Mercy</div>
-        <h1 id="hero-title">Decode cell fate.<br/><span>Make it measurable.</span></h1>
+        <div class="hero-identity glass-subtle">
+          <img class="profile-thumb" src="assets/emil-profile.webp" alt="Portrait of Emil Kriukov" />
+          <div>
+            <p class="identity-kicker">This is Emil Kriukov</p>
+            <h2 class="identity-name">Emil Kriukov</h2>
+            <p class="identity-role">Computational biologist · single-cell atlases · retinal systems</p>
+          </div>
+        </div>
+
+        <div class="eyebrow"><span class="status-dot"></span> Lead Bioinformatician · University of Pittsburgh</div>
+        <div class="opportunity-badge">Currently looking for a PhD student position</div>
+        <h1 id="hero-title">Discover new targets for<br/><span>vision restoration.</span></h1>
         <p class="hero-lede">
-          I build large-scale single-cell atlases and computational models to understand how retinal and neural cells acquire identity, change in disease, and can be guided toward regeneration.
+          I want to discover novel therapeutic targets for vision restoration through computational biology — by integrating large-scale single-cell atlases, quantitative modeling, and comparative analysis of retinal and optic-nerve cell states.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore current work</a>
+          <a class="button button-primary" href="#goal">Explore Eye1k</a>
           <a class="button button-ghost" href="https://scholar.google.com/citations?hl=en&authuser=1&user=YeBiFWYAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
           <a class="button button-ghost" href="https://github.com/mcrewcow" target="_blank" rel="noopener">GitHub ↗</a>
         </div>
@@ -73,30 +85,34 @@
         <span class="section-number">01</span>
         <div>
           <p class="section-kicker">North star</p>
-          <h2>A quantitative language for cell fate</h2>
+          <h2>Eye1k</h2>
         </div>
       </div>
 
-      <div class="goal-grid">
-        <article class="glass statement-card reveal">
-          <p class="big-statement">My goal is to understand <em>when</em>, <em>how</em>, and <em>how strongly</em> cells commit to identity — and turn that knowledge into strategies for retinal development, disease modeling, and regeneration.</p>
+      <div class="northstar-grid">
+        <article class="glass northstar-visual reveal interactive-card" tabindex="0">
+          <img src="assets/eye1k-atlas.webp" alt="Abstract visualization of integrated retinal and optic-nerve single-cell atlases" loading="lazy" />
+          <div class="northstar-image-shade" aria-hidden="true"></div>
+          <div class="northstar-caption"><span>mouse retina</span><i>+</i><span>optic nerve</span><i>×</i><span>conditions</span></div>
         </article>
-        <article class="glass definition-card reveal">
-          <span class="micro-label">Working definition</span>
-          <h3>Cell-fate commitment</h3>
-          <p>The progressive restriction of a cell’s plausible future identities as its molecular state stabilizes along a developmental or response trajectory.</p>
-          <p class="muted">The computational challenge: measure that restriction from high-dimensional single-cell data rather than treating cell identity as a static label.</p>
+
+        <article class="glass northstar-copy reveal interactive-card" tabindex="0">
+          <span class="micro-label">Eye1k</span>
+          <h3>A pan-conditional mouse atlas of the retina and optic nerve</h3>
+          <p class="big-statement compact">A unified reference to resolve retinal and optic-nerve cell types and states across development, homeostasis, injury, and neurodegeneration.</p>
+          <p class="muted">Eye1k currently integrates 13 single-cell atlases and is being developed with a consortium-based annotation strategy. The long-term goal is to use cross-condition maps to identify molecular programs and candidate therapeutic targets relevant to vision restoration.</p>
+          <div class="project-meta northstar-meta"><span>13 atlases</span><span>mouse</span><span>retina + optic nerve</span><span>cross-condition integration</span></div>
         </article>
       </div>
 
-      <div class="research-loop reveal" aria-label="Research workflow">
-        <div><span>01</span><strong>Map</strong><small>build atlases at scale</small></div>
+      <div class="research-loop reveal" aria-label="Eye1k research workflow">
+        <div><span>01</span><strong>Map</strong><small>assemble atlases at scale</small></div>
         <i>→</i>
-        <div><span>02</span><strong>Measure</strong><small>quantify state & commitment</small></div>
+        <div><span>02</span><strong>Harmonize</strong><small>resolve shared cell identities</small></div>
         <i>→</i>
-        <div><span>03</span><strong>Model</strong><small>resolve trajectories & interactions</small></div>
+        <div><span>03</span><strong>Compare</strong><small>find condition-linked programs</small></div>
         <i>→</i>
-        <div><span>04</span><strong>Guide</strong><small>inform differentiation & repair</small></div>
+        <div><span>04</span><strong>Discover</strong><small>nominate restoration targets</small></div>
       </div>
     </section>
 
@@ -104,40 +120,41 @@
       <div class="section-heading reveal">
         <span class="section-number">02</span>
         <div>
-          <p class="section-kicker">Now</p>
-          <h2>Current projects</h2>
+          <p class="section-kicker">In parallel</p>
+          <h2>Other ongoing projects</h2>
         </div>
       </div>
 
       <div class="project-grid">
-        <article class="project-card glass feature project-card-visual reveal">
-          <div class="project-image-wrap">
-            <img src="assets/eye1k-atlas.webp" alt="Abstract visualization of retinal and optic-nerve atlas integration across multiple single-cell datasets" loading="lazy" />
-          </div>
-          <div class="project-body">
-            <div class="card-topline"><span class="tag live">PRIMARY</span><span>2026 →</span></div>
-            <h3>Eye1k</h3>
-            <p class="project-subtitle">Integrated mouse retina + optic nerve atlas collection</p>
-            <p>An integrated collection of 13 single-cell atlases spanning healthy and neurodegenerative conditions, built for systematic cell-subtype characterization across retinal and optic-nerve cell classes.</p>
-            <div class="project-meta"><span>13 atlases</span><span>consortium annotation</span><span>retina + optic nerve</span></div>
-          </div>
-        </article>
-
-        <article class="project-card glass feature project-card-visual reveal">
+        <article class="project-card glass feature project-card-visual reveal interactive-card" tabindex="0">
           <div class="project-image-wrap">
             <img src="assets/sccs-commitment.webp" alt="Abstract visualization of branching cell-fate trajectories and quantitative commitment scores" loading="lazy" />
           </div>
           <div class="project-body">
-            <div class="card-topline"><span class="tag live">PRIMARY</span><span>2026 →</span></div>
+            <div class="card-topline"><span class="tag live">METHOD</span><span>2026 →</span></div>
             <h3>scCS</h3>
             <p class="project-subtitle">single-cell Commitment Scores</p>
-            <p>A computational framework for quantitative assessment of cell-fate commitment from single-cell transcriptomic data — designed to move beyond discrete labels toward interpretable commitment strength.</p>
+            <p>A computational framework for quantitative assessment of cell-fate commitment from single-cell transcriptomic data, designed to describe commitment as a continuous property rather than only a discrete cell label.</p>
             <div class="project-meta"><span>cell fate</span><span>single-cell</span><span>quantitative framework</span></div>
             <a class="text-link" href="https://doi.org/10.64898/2026.07.27.741070v1" target="_blank" rel="noopener">Preprint ↗</a>
           </div>
         </article>
 
-        <article class="project-card glass reveal">
+        <article class="project-card glass feature project-card-visual reveal interactive-card" tabindex="0">
+          <div class="project-image-wrap">
+            <img class="hroca-image" src="assets/hero-retina-data.webp" alt="Abstract retinal tissue and single-cell data visualization" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <div class="card-topline"><span class="tag live">ATLAS</span><span>ongoing</span></div>
+            <h3>HROCA</h3>
+            <p class="project-subtitle">Human Retinal Organoid Cell Atlas</p>
+            <p>Ongoing development of a high-resolution single-cell reference for human retinal organoids, with cross-system comparison to in vivo human retinal development and a focus on transcriptional states that emerge or diverge in vitro.</p>
+            <div class="project-meta"><span>retinal organoids</span><span>human development</span><span>atlas</span></div>
+            <a class="text-link" href="https://doi.org/10.1101/2025.08.02.668295" target="_blank" rel="noopener">Preprint ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card glass reveal interactive-card" tabindex="0">
           <div class="card-topline"><span class="tag">ACTIVE PAPER</span><span>2026</span></div>
           <h3>NF1 optic glioma</h3>
           <p class="project-subtitle">Systems-level single-cell dissection</p>
@@ -145,7 +162,7 @@
           <div class="project-meta"><span>NF1</span><span>optic glioma</span><span>single-cell</span></div>
         </article>
 
-        <article class="project-card glass reveal">
+        <article class="project-card glass reveal interactive-card" tabindex="0">
           <div class="card-topline"><span class="tag">ACTIVE PAPER</span><span>2026</span></div>
           <h3>Human optic nerve atlas</h3>
           <p class="project-subtitle">Integrated single-cell multi-omics</p>
@@ -168,11 +185,11 @@
         <article class="timeline-item reveal">
           <div class="timeline-rail"><span class="timeline-dot current"></span></div>
           <div class="timeline-date">2026 — present</div>
-          <div class="timeline-card glass">
-            <div class="role-heading"><div><span class="tag live">CURRENT</span><h3>Lead Bioinformatician</h3><p>UPMC Mercy · University of Pittsburgh</p></div></div>
+          <div class="timeline-card glass interactive-card" tabindex="0">
+            <div class="role-heading"><div><span class="tag live">CURRENT</span><h3>Lead Bioinformatician</h3><p>University of Pittsburgh</p></div></div>
             <p>Leading Eye1k, developing scCS, coordinating a five-member bioinformatics team, and supporting computational work across internal and collaborative studies.</p>
             <div class="paper-list">
-              <a href="https://doi.org/10.64898/2026.07.27.741070v1" target="_blank" rel="noopener"><span>scCS</span><small>bioRxiv · 2026 ↗</small></a>
+              <a href="https://doi.org/10.64898/2026.07.27.741070v1" target="_blank" rel="noopener"><span>Quantitative assessment of cell-fate commitment using scCS</span><small>bioRxiv · 2026 ↗</small></a>
               <div class="paper-static"><span>NF1 optic glioma at single-cell resolution</span><small>Communications Biology · in review, 2026</small></div>
               <div class="paper-static"><span>Human optic nerve multi-omics atlas</span><small>Nature Genetics · in review, 2026</small></div>
             </div>
@@ -182,14 +199,20 @@
         <article class="timeline-item reveal">
           <div class="timeline-rail"><span class="timeline-dot"></span></div>
           <div class="timeline-date">2022 — 2026</div>
-          <div class="timeline-card glass">
+          <div class="timeline-card glass interactive-card" tabindex="0">
             <div class="role-heading"><div><h3>Lead Bioinformatician</h3><p>Schepens Eye Research Institute of Mass Eye and Ear · Harvard Medical School</p></div></div>
             <p>Built and analyzed large-scale single-cell atlases of retinal development across in vivo and in vitro systems, with emphasis on retinal ganglion cell specification and maturation. Developed workflows for integration, trajectories, and cross-system comparison across datasets totaling more than three million cells.</p>
             <div class="paper-list">
               <a href="https://doi.org/10.1101/2025.08.02.668295" target="_blank" rel="noopener"><span>Human retinal organoid single-cell atlas</span><small>bioRxiv · 2025 ↗</small></a>
-              <a href="https://doi.org/10.1016/j.ydbio.2025.08.025" target="_blank" rel="noopener"><span>Developmental heterogeneity of human RGCs</span><small>Developmental Biology · 2025 ↗</small></a>
-              <a href="https://doi.org/10.1101/2025.05.16.654622v1" target="_blank" rel="noopener"><span>Retinal myeloid response to neuronal transplantation</span><small>iScience · accepted 2026 ↗</small></a>
-              <a href="https://doi.org/10.1073/pnas.2535044123" target="_blank" rel="noopener"><span>Müller glia–microglia cross talk in regeneration</span><small>PNAS · 2026 ↗</small></a>
+              <a href="https://doi.org/10.1016/j.ydbio.2025.08.025" target="_blank" rel="noopener"><span>Developmental heterogeneity of human retinal ganglion cells</span><small>Developmental Biology · 2025 ↗</small></a>
+              <a href="https://doi.org/10.1101/2025.05.16.654622v1" target="_blank" rel="noopener"><span>Retinal myeloid response to transplantation of human neurons</span><small>iScience · accepted 2026 ↗</small></a>
+              <a href="https://doi.org/10.1073/pnas.2535044123" target="_blank" rel="noopener"><span>Müller glia–microglia cross talk during retina regeneration</span><small>PNAS · 2026 ↗</small></a>
+              <a href="https://doi.org/10.1101/2023.11.17.567614" target="_blank" rel="noopener"><span>DNMT3a suppression and optic-nerve regeneration</span><small>Science Translational Medicine · in revision, 2026 ↗</small></a>
+              <a href="https://doi.org/10.1167/tvst.14.9.27" target="_blank" rel="noopener"><span>Neurotrophic factor co-treatment improves donor and host RGC survival</span><small>TVST · 2025 ↗</small></a>
+              <a href="https://doi.org/10.1101/2024.07.06.602307" target="_blank" rel="noopener"><span>Improving donor retinal ganglion cell survival through microglia modulation</span><small>bioRxiv · 2024 ↗</small></a>
+              <a href="https://doi.org/10.1016/j.ymthe.2024.03.025" target="_blank" rel="noopener"><span>SOCS3 regulates pathological retinal angiogenesis through SPP1</span><small>Molecular Therapy · 2024 ↗</small></a>
+              <a href="https://doi.org/10.1073/pnas.2302089120" target="_blank" rel="noopener"><span>Controlling donor and newborn neuron migration and maturation in the eye</span><small>PNAS · 2023 ↗</small></a>
+              <a href="https://doi.org/10.1016/j.celrep.2023.112889" target="_blank" rel="noopener"><span>IGFBPL1, microglia homeostasis, and neuroinflammation in glaucoma</span><small>Cell Reports · 2023 ↗</small></a>
             </div>
           </div>
         </article>
@@ -197,7 +220,7 @@
         <article class="timeline-item reveal">
           <div class="timeline-rail"><span class="timeline-dot"></span></div>
           <div class="timeline-date">2021 — 2023</div>
-          <div class="timeline-card glass">
+          <div class="timeline-card glass interactive-card" tabindex="0">
             <div class="role-heading"><div><h3>Research Intern</h3><p>Laboratory of Bone and Cartilage Physiology · Karolinska Institutet</p></div></div>
             <p>Studied the cartilage stem-cell niche in development and regeneration while developing expertise in light-sheet microscopy, single-cell transcriptomics, RNA velocity, and deep-learning models for microscopy.</p>
             <div class="paper-list">
@@ -209,12 +232,11 @@
         <article class="timeline-item reveal">
           <div class="timeline-rail"><span class="timeline-dot"></span></div>
           <div class="timeline-date">2021</div>
-          <div class="timeline-card glass">
+          <div class="timeline-card glass interactive-card" tabindex="0">
             <div class="role-heading"><div><h3>Research Intern</h3><p>Center for Brain Research · Medical University of Vienna</p></div></div>
-            <p>Worked with spatial and single-cell approaches around Schwann-cell progenitor derivatives, adrenal development, and neuroblastoma, including slide-seq2 / merFISH concepts, RNA Scope, microscopy, and Seurat.</p>
+            <p>Worked with spatial and single-cell approaches around Schwann-cell progenitor derivatives and adrenal development, including slide-seq2 / merFISH concepts, RNA Scope, advanced microscopy, visualization, and Seurat.</p>
             <div class="paper-list">
-              <a href="https://doi.org/10.1186/s12943-024-02091-y" target="_blank" rel="noopener"><span>Pre-malignant SCP-like subclones in human neuroblastoma</span><small>Molecular Cancer · 2024 ↗</small></a>
-              <a href="https://doi.org/10.1038/s41467-022-30438-w" target="_blank" rel="noopener"><span>Serotonin limits chromaffin-cell generation</span><small>Nature Communications · 2022 ↗</small></a>
+              <a href="https://doi.org/10.1038/s41467-022-30438-w" target="_blank" rel="noopener"><span>Serotonin limits chromaffin-cell generation during adrenal development</span><small>Nature Communications · 2022 ↗</small></a>
             </div>
           </div>
         </article>
@@ -222,7 +244,7 @@
         <article class="timeline-item reveal">
           <div class="timeline-rail"><span class="timeline-dot"></span></div>
           <div class="timeline-date">2020</div>
-          <div class="timeline-card glass">
+          <div class="timeline-card glass interactive-card" tabindex="0">
             <div class="role-heading"><div><h3>Research Intern</h3><p>Laboratory of Skeletal Tissues Regeneration · Sechenov University</p></div></div>
             <p>Worked on mineralized-tissue analysis during regeneration and advanced microscopy, including Lambda, Airyscan, IHC modifications, and whole-mount IHC.</p>
           </div>
@@ -230,10 +252,98 @@
 
         <article class="timeline-item reveal">
           <div class="timeline-rail"><span class="timeline-dot"></span></div>
+          <div class="timeline-date">2019</div>
+          <div class="timeline-card glass interactive-card" tabindex="0">
+            <div class="role-heading"><div><h3>Research Intern</h3><p>Laboratory of Developmental Biology and Regenerative Medicine · Karolinska Institutet</p></div></div>
+            <p>Worked on neural-crest development and neuroblastoma biology while developing hands-on experience in confocal microscopy, cryotomy, and immunohistochemistry.</p>
+            <div class="paper-list">
+              <a href="https://doi.org/10.1186/s12943-024-02091-y" target="_blank" rel="noopener"><span>Pre-malignant SCP-like subclones in human neuroblastoma</span><small>Molecular Cancer · 2024 ↗</small></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-rail"><span class="timeline-dot"></span></div>
           <div class="timeline-date">2019 — 2021</div>
-          <div class="timeline-card glass">
-            <div class="role-heading"><div><h3>Student Researcher + Research Intern</h3><p>Nizhny Novgorod · Karolinska Institutet</p></div></div>
-            <p>Early research spanning colorectal-cancer metabolism and chemoresistance, neural-crest derivatives, tumor stem cells, transplantation biology, growth-plate stem-cell niches, microscopy, and IHC.</p>
+          <div class="timeline-card glass interactive-card" tabindex="0">
+            <div class="role-heading"><div><h3>Student Researcher</h3><p>Institute of Experimental Oncology and Biomedical Technologies · Nizhny Novgorod</p></div></div>
+            <p>Early research spanning tumor metabolism and chemoresistance, neural-crest derivatives, tumor stem cells, transplantation biology, and the regenerative potential and metabolism of the growth-plate stem-cell niche.</p>
+            <div class="paper-list">
+              <a href="https://scholar.google.com/scholar?q=%22Exploring+metabolism+of+the+growth+plate+chondrocytes+using+FLIM+revealed+least+glycolytic+metabolism+in+chondroprogenitors%22" target="_blank" rel="noopener"><span>Exploring metabolism of growth-plate chondrocytes using FLIM</span><small>Journal of Bone and Mineral Research · abstract, 2023 ↗</small></a>
+              <a href="https://sechenov-sibs.confreg.org/userfiles/ufiles/Abstracts_SIBS_ENG_2021_LAST.pdf" target="_blank" rel="noopener"><span>FLIM and single-cell transcriptomics reveal metabolic features in cartilage growth-plate development</span><small>Sechenov International Biomedical Summit · abstract, 2021 ↗</small></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell" id="teaching">
+      <div class="section-heading reveal">
+        <span class="section-number">04</span>
+        <div>
+          <p class="section-kicker">Teaching</p>
+          <h2>Mentoring, courses, workshops</h2>
+        </div>
+      </div>
+
+      <div class="teaching-grid">
+        <article class="glass teaching-card reveal interactive-card" tabindex="0">
+          <div class="card-topline"><span class="tag live">MENTORING</span><span>2023 → present</span></div>
+          <h3>Research mentoring</h3>
+          <p class="project-subtitle">Computational biology training across career stages</p>
+          <p>I enjoy mentoring people at very different stages, from high-school students to postdocs, especially around single-cell analysis, computational thinking, and research design.</p>
+          <ul class="teaching-list">
+            <li>Sergio Pestun — High School Student (2023)</li>
+            <li>Sthavir Vinjamuri — College Student (2024–2025)</li>
+            <li>Everett Labrecque — High School / College Student (2024–present)</li>
+            <li>Chieh-Yu Lin — Master’s Student (2025–present)</li>
+            <li>Anil Upreti — Postdoc (2025–2026)</li>
+          </ul>
+        </article>
+
+        <article class="glass teaching-card reveal interactive-card" tabindex="0">
+          <div class="card-topline"><span class="tag">COURSES + WORKSHOPS</span><span>hands-on teaching</span></div>
+          <h3>Lectures and training programs</h3>
+          <p class="project-subtitle">From formal coursework to practical workshop teaching</p>
+          <ul class="teaching-list">
+            <li>Lecturer at the Master’s program <em>Bioinformatics: Single-cell multiomics</em> — Tomsk National Research Medical Center</li>
+            <li>Organized and hosted bioinformatics workshops on single-cell RNA-seq analysis at Belgrade University (14 people) and the Institute for Biological Research “Siniša Stanković” (5 people)</li>
+            <li>Organiser of BNV Lab Summer School 2025</li>
+          </ul>
+          <a class="text-link" href="https://master-omics.ru/lectors/kriukove/" target="_blank" rel="noopener">Program page ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-shell" id="hobbies">
+      <div class="section-heading reveal">
+        <span class="section-number">05</span>
+        <div>
+          <p class="section-kicker">Side quests</p>
+          <h2>Hobby projects</h2>
+        </div>
+      </div>
+
+      <div class="hobby-grid">
+        <article class="glass hobby-card reveal interactive-card" tabindex="0">
+          <div class="hobby-orb parasite-orb" aria-hidden="true"><span>∿</span></div>
+          <div>
+            <div class="card-topline"><span class="tag">CURRENT BIOLOGY</span><span>2023</span></div>
+            <h3>The parasite story</h3>
+            <p class="project-subtitle">Polymorphic parasitic larvae that cooperate as a swimming colony</p>
+            <p>A collaboration outside my main retinal work: two morphologically and functionally distinct cercarial forms cooperate to build a swimming aggregate proposed to aid host infection — a striking example of division of labor in a parasite.</p>
+            <a class="text-link" href="https://doi.org/10.1016/j.cub.2023.08.090" target="_blank" rel="noopener">Current Biology ↗</a>
+          </div>
+        </article>
+
+        <article class="glass hobby-card reveal interactive-card" tabindex="0">
+          <div class="hobby-orb axolotl-orb" aria-hidden="true"><span>✦</span></div>
+          <div>
+            <div class="card-topline"><span class="tag">CELL</span><span>2025</span></div>
+            <h3>Axolotl regeneration</h3>
+            <p class="project-subtitle">Body-wide and local responses to amputation</p>
+            <p>A large collaborative regeneration project showing that adrenergic signaling coordinates systemic stem-cell activation with local limb-regeneration responses after amputation in axolotl.</p>
+            <a class="text-link" href="https://doi.org/10.1016/j.cell.2025.09.025" target="_blank" rel="noopener">Cell ↗</a>
           </div>
         </article>
       </div>
@@ -241,7 +351,7 @@
 
     <section class="section-shell" id="toolbox">
       <div class="section-heading reveal">
-        <span class="section-number">04</span>
+        <span class="section-number">06</span>
         <div>
           <p class="section-kicker">Methods</p>
           <h2>Computational toolbox</h2>
@@ -249,19 +359,19 @@
       </div>
 
       <div class="toolbox-grid">
-        <article class="glass tool-card reveal"><span>01</span><h3>Single-cell at scale</h3><p>Scanpy · Seurat · RAPIDS-singlecell · Cell Ranger · scVI · scArches · scPoli</p></article>
-        <article class="glass tool-card reveal"><span>02</span><h3>Fate & dynamics</h3><p>RNA velocity · CellRank · PAGA · Monocle3 · Slingshot · CytoTRACE · scFates</p></article>
-        <article class="glass tool-card reveal"><span>03</span><h3>Networks & interaction</h3><p>SCENIC · CellChat · gene-regulatory networks · cell-cell communication</p></article>
-        <article class="glass tool-card reveal"><span>04</span><h3>GPU + ML</h3><p>PyTorch · JAX · Ray · cuML · RAPIDS · large-scale integration and predictive modeling</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>01</span><h3>Single-cell at scale</h3><p>Scanpy · Seurat · RAPIDS-singlecell · Cell Ranger · scVI · scArches · scPoli</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>02</span><h3>Fate & dynamics</h3><p>RNA velocity · CellRank · PAGA · Monocle3 · Slingshot · CytoTRACE · scFates</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>03</span><h3>Networks & interaction</h3><p>SCENIC · CellChat · gene-regulatory networks · cell-cell communication</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>04</span><h3>GPU + ML</h3><p>PyTorch · JAX · Ray · cuML · RAPIDS · large-scale integration and predictive modeling</p></article>
       </div>
     </section>
 
     <section class="section-shell contact-section">
       <div class="contact-card glass reveal">
         <div>
-          <p class="section-kicker">Contact</p>
-          <h2>Build something that makes biology measurable.</h2>
-          <p>For research collaborations, atlas integration, single-cell methods, and computational biology.</p>
+          <p class="section-kicker">Next step</p>
+          <h2>I am currently looking for a PhD student position.</h2>
+          <p>I am happy to discuss PhD opportunities, research collaborations, atlas integration, single-cell methods, and computational approaches to vision restoration.</p>
         </div>
         <div class="contact-actions">
           <a class="button button-primary" href="mailto:emilprmu@gmail.com">emilprmu@gmail.com</a>
