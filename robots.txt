@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Allow: /ekriukov/
 
-Sitemap: https://mcrewcow.github.io/sitemap.xml
+Sitemap: https://mcrewcow.github.io/ekriukov/sitemap.xml
