@@ -38,18 +38,20 @@
   </header>
 
   <main>
-    <section class="hero section-shell" aria-labelledby="hero-title">
+        <section class="hero section-shell" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <div class="hero-identity glass-subtle">
-          <img class="profile-thumb" src="assets/emil-profile.webp" alt="Portrait of Emil Kriukov" />
-          <div>
-            <h2 class="identity-name">Emil Kriukov</h2>
-            <p class="identity-role">Computational biologist · single-cell atlases · retinal systems</p>
+        <div class="hero-intro-panel glass">
+          <div class="hero-identity">
+            <img class="profile-thumb" src="assets/emil-profile.webp" alt="Portrait of Emil Kriukov" />
+            <div>
+              <h2 class="identity-name">Emil Kriukov</h2>
+              <p class="identity-role">Computational biologist · single-cell atlases · retinal systems</p>
+            </div>
           </div>
+          <div class="hero-pill status-pill"><span class="status-dot"></span><span>Lead Bioinformatician · University of Pittsburgh</span></div>
+          <div class="hero-pill opportunity-pill"><span class="pill-dot"></span><span>Currently looking for a PhD student position</span></div>
         </div>
 
-        <div class="eyebrow"><span class="status-dot"></span> Lead Bioinformatician · University of Pittsburgh</div>
-        <div class="opportunity-badge">Currently looking for a PhD student position</div>
         <h1 id="hero-title">Discover new targets for<br/><span>vision restoration.</span></h1>
         <p class="hero-lede">
           I want to discover novel therapeutic targets for vision restoration through computational biology — by integrating large-scale single-cell atlases, quantitative modeling, and comparative analysis of retinal and optic-nerve cell states.
@@ -126,8 +128,8 @@
 
       <div class="project-grid">
         <article class="project-card glass feature project-card-visual reveal interactive-card" tabindex="0">
-          <div class="project-image-wrap logo-wrap">
-            <img class="logo-figure" src="assets/sccs-logo.svg" alt="scCS logo and wordmark" loading="lazy" />
+          <div class="project-image-wrap light-wrap sccs-wrap">
+            <img class="logo-figure" src="assets/sccs-logo-user.webp" alt="scCS circular logo" loading="lazy" />
           </div>
           <div class="project-body">
             <div class="card-topline"><span class="tag live">METHOD</span><span>2026 →</span></div>
@@ -297,7 +299,7 @@
             <li>Sergio Pestun — High School Student (2023)</li>
             <li>Sthavir Vinjamuri — College Student (2024–2025)</li>
             <li>Everett Labrecque — High School / College Student (2024–present)</li>
-            <li>Chieh-Yu Lin — Master’s Student (2025–present)</li>
+            <li>Chien-Yu Zona Lin — Master’s Student (2025–present)</li>
             <li>Anil Upreti — Postdoc (2025–2026)</li>
           </ul>
         </article>
@@ -325,10 +327,12 @@
         </div>
       </div>
 
-      <div class="hobby-grid">
-        <article class="glass hobby-card reveal interactive-card" tabindex="0">
-          <div class="hobby-orb parasite-orb" aria-hidden="true"><span>∿</span></div>
-          <div>
+            <div class="hobby-grid">
+        <article class="glass hobby-card hobby-visual-card reveal interactive-card" tabindex="0">
+          <div class="hobby-image-wrap">
+            <img src="assets/parasite-story.webp" alt="Image of polymorphic parasitic larvae assembled around a host-like sphere" loading="lazy" />
+          </div>
+          <div class="hobby-body">
             <div class="card-topline"><span class="tag">CURRENT BIOLOGY</span><span>2023</span></div>
             <h3>The parasite story</h3>
             <p class="project-subtitle">Polymorphic parasitic larvae that cooperate as a swimming colony</p>
@@ -337,9 +341,11 @@
           </div>
         </article>
 
-        <article class="glass hobby-card reveal interactive-card" tabindex="0">
-          <div class="hobby-orb axolotl-orb" aria-hidden="true"><span>✦</span></div>
-          <div>
+        <article class="glass hobby-card hobby-visual-card reveal interactive-card" tabindex="0">
+          <div class="hobby-image-wrap axolotl-wrap">
+            <img src="assets/axolotl-story.webp" alt="Portrait of an axolotl on a black background" loading="lazy" />
+          </div>
+          <div class="hobby-body">
             <div class="card-topline"><span class="tag">CELL</span><span>2025</span></div>
             <h3>Axolotl regeneration</h3>
             <p class="project-subtitle">Body-wide and local responses to amputation</p>
@@ -359,13 +365,70 @@
         </div>
       </div>
 
+            <div class="toolbox-intro reveal">
+        <p>These are the main analysis and experimental domains I work across. I wanted this section to read more clearly than a pure software list, so each card now describes the actual type of work.</p>
+      </div>
+
       <div class="toolbox-grid toolbox-grid-expanded">
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>01</span><h3>Single-cell at scale</h3><p>Scanpy · Seurat · RAPIDS-singlecell · Cell Ranger · scVI · scArches · scPoli</p></article>
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>02</span><h3>Fate & dynamics</h3><p>RNA velocity · CellRank · PAGA · Monocle3 · Slingshot · CytoTRACE · scFates</p></article>
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>03</span><h3>Regulatory & interaction analysis</h3><p>SCENIC · CellChat · gene-regulatory networks · ligand–receptor and cell-cell communication</p></article>
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>04</span><h3>Spatial + imaging omics</h3><p>Spatial transcriptomics · imaging-based analysis · RNA Scope · microscopy-linked quantification</p></article>
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>05</span><h3>Epigenomics + bulk omics</h3><p>Bulk RNA-seq · ChIP-seq · ATAC-seq · general multi-omics integration and comparative analysis</p></article>
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>06</span><h3>Wet-lab + microscopy</h3><p>Cell culture · retinal organoids · IHC · confocal, Airyscan, and light-sheet microscopy · tissue clearing</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0">
+          <div class="tool-head"><span>01</span><h3>Single-cell RNA-seq analysis</h3></div>
+          <p class="tool-subtitle">Large-scale atlas building, integration, annotation, and comparison.</p>
+          <ul class="tool-list">
+            <li>Scanpy, Seurat, RAPIDS-singlecell</li>
+            <li>Cell Ranger, scVI, scArches, scPoli</li>
+            <li>Batch correction, subtype annotation, atlas harmonization</li>
+          </ul>
+        </article>
+
+        <article class="glass tool-card reveal interactive-card" tabindex="0">
+          <div class="tool-head"><span>02</span><h3>Trajectory and fate inference</h3></div>
+          <p class="tool-subtitle">Methods for lineage progression, commitment, and cellular dynamics.</p>
+          <ul class="tool-list">
+            <li>RNA velocity, CellRank, scFates</li>
+            <li>PAGA, Monocle3, Slingshot, CytoTRACE</li>
+            <li>Commitment scoring and branch-specific interpretation</li>
+          </ul>
+        </article>
+
+        <article class="glass tool-card reveal interactive-card" tabindex="0">
+          <div class="tool-head"><span>03</span><h3>Gene regulation and cell communication</h3></div>
+          <p class="tool-subtitle">Finding regulatory programs and interaction logic between cell states.</p>
+          <ul class="tool-list">
+            <li>SCENIC and gene-regulatory network analysis</li>
+            <li>CellChat and ligand–receptor analysis</li>
+            <li>Program discovery across conditions and systems</li>
+          </ul>
+        </article>
+
+        <article class="glass tool-card reveal interactive-card" tabindex="0">
+          <div class="tool-head"><span>04</span><h3>Spatial and imaging-linked omics</h3></div>
+          <p class="tool-subtitle">Connecting molecular data with tissue architecture and microscopy.</p>
+          <ul class="tool-list">
+            <li>Spatial transcriptomics and imaging-based readouts</li>
+            <li>RNA Scope and microscopy-linked quantification</li>
+            <li>Cross-modal interpretation with histology and tissue context</li>
+          </ul>
+        </article>
+
+        <article class="glass tool-card reveal interactive-card" tabindex="0">
+          <div class="tool-head"><span>05</span><h3>Bulk omics and epigenomics</h3></div>
+          <p class="tool-subtitle">Beyond single-cell: chromatin and bulk profiling workflows.</p>
+          <ul class="tool-list">
+            <li>Bulk RNA-seq, ChIP-seq, ATAC-seq</li>
+            <li>Multi-omics integration and comparative analysis</li>
+            <li>Transcriptional and chromatin-level interpretation</li>
+          </ul>
+        </article>
+
+        <article class="glass tool-card reveal interactive-card" tabindex="0">
+          <div class="tool-head"><span>06</span><h3>Wet-lab and microscopy methods</h3></div>
+          <p class="tool-subtitle">Hands-on experimental work that supports the computational side.</p>
+          <ul class="tool-list">
+            <li>Cell culture, retinal organoids, immunohistochemistry</li>
+            <li>Confocal, Airyscan, and light-sheet microscopy</li>
+            <li>Tissue clearing and general wet-lab support for omics studies</li>
+          </ul>
+        </article>
       </div>
     </section>
 
