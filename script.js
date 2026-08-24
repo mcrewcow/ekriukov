@@ -106,22 +106,3 @@ if (canvas && !reducedMotion) {
   resize();
   requestAnimationFrame(frame);
 }
-
-const interactiveCards = document.querySelectorAll('.interactive-card');
-interactiveCards.forEach((card) => {
-  const flash = () => {
-    card.classList.remove('clicked');
-    void card.offsetWidth;
-    card.classList.add('clicked');
-    clearTimeout(card._clickTimer);
-    card._clickTimer = setTimeout(() => card.classList.remove('clicked'), 420);
-  };
-
-  card.addEventListener('click', flash);
-  card.addEventListener('keydown', (event) => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-      flash();
-    }
-  });
-});
