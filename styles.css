@@ -708,3 +708,109 @@ a { color: inherit; }
     font-size: .78rem;
   }
 }
+
+/* --- V4 requested content/layout refinements --- */
+.brand-copy strong {
+  font-size: .84rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+.brand-copy small {
+  font-size: .64rem;
+}
+
+.hero-identity {
+  grid-template-columns: 140px 1fr;
+  width: min(100%, 720px);
+  gap: 20px;
+  padding: 16px;
+}
+.profile-thumb {
+  width: 140px;
+  height: 140px;
+  border-radius: 28px;
+}
+.identity-name {
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  line-height: .95;
+}
+.identity-role {
+  margin-top: 10px;
+  font-size: .92rem;
+  max-width: 36rem;
+}
+
+.northstar-visual {
+  background: linear-gradient(180deg, rgba(255,255,255,.97), rgba(247,250,255,.94));
+}
+.northstar-visual img.data-figure {
+  object-fit: contain;
+  object-position: center;
+  padding: 26px;
+  filter: saturate(1.02) brightness(1.0) contrast(1.02);
+}
+.northstar-image-shade {
+  background: linear-gradient(to top, rgba(245,248,252,.00), rgba(245,248,252,.00));
+}
+.northstar-caption {
+  color: #162033;
+  background: rgba(245,249,255,.82);
+  border-color: rgba(19,35,60,.10);
+}
+
+.project-image-wrap {
+  min-height: 220px;
+}
+.project-image-wrap img.data-figure,
+.project-image-wrap img.logo-figure {
+  object-fit: contain;
+  object-position: center;
+  padding: 18px;
+  transform: scale(1);
+  filter: saturate(1.0) brightness(1.0);
+}
+.project-image-wrap img.logo-figure {
+  padding: 28px;
+}
+.project-card-visual:hover .project-image-wrap img.data-figure,
+.project-card-visual:hover .project-image-wrap img.logo-figure {
+  transform: scale(1.02);
+  filter: saturate(1.02) brightness(1.01);
+}
+.project-image-wrap.light-wrap {
+  background: linear-gradient(180deg, rgba(253,253,254,1), rgba(244,246,250,.98));
+}
+.project-image-wrap.logo-wrap {
+  background: radial-gradient(circle at 50% 20%, rgba(143,255,224,.10), rgba(7,10,18,.92) 58%), linear-gradient(180deg, #08101d, #0e1527);
+}
+.project-image-wrap::after {
+  background: linear-gradient(to bottom, transparent 65%, rgba(6,9,15,.12) 100%);
+}
+
+.toolbox-grid-expanded {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 980px) {
+  .toolbox-grid-expanded {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-identity {
+    grid-template-columns: 104px 1fr;
+    gap: 14px;
+  }
+  .profile-thumb {
+    width: 104px;
+    height: 104px;
+    border-radius: 22px;
+  }
+  .identity-name {
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+  }
+  .toolbox-grid-expanded {
+    grid-template-columns: 1fr;
+  }
+}

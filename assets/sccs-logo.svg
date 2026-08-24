@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#07101d"/>
+<stop offset="50%" stop-color="#0b1326"/>
+<stop offset="100%" stop-color="#101731"/>
+</linearGradient>
+<linearGradient id="g1" x1="180" y1="170" x2="1000" y2="650">
+<stop offset="0%" stop-color="#8fffe0"/>
+<stop offset="45%" stop-color="#8aa8ff"/>
+<stop offset="100%" stop-color="#d7a7ff"/>
+</linearGradient>
+<filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+<feGaussianBlur stdDeviation="16" result="b"/>
+<feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+</defs>
+<rect width="1200" height="800" rx="36" fill="url(#bg)"/>
+<g opacity="0.22">
+<circle cx="210" cy="230" r="5" fill="#8fffe0"/><circle cx="260" cy="280" r="3" fill="#8aa8ff"/><circle cx="312" cy="235" r="4" fill="#d7a7ff"/>
+<circle cx="1020" cy="590" r="5" fill="#8fffe0"/><circle cx="930" cy="640" r="3" fill="#8aa8ff"/><circle cx="878" cy="575" r="4" fill="#d7a7ff"/>
+<path d="M170 250C290 310 340 340 430 355" stroke="#7da6ff" stroke-width="2"/>
+<path d="M790 448C885 472 940 518 1040 615" stroke="#a793ff" stroke-width="2"/>
+</g>
+<g filter="url(#glow)">
+<path d="M250 188c-72 0-130 48-130 110 0 38 21 71 56 90-35 16-55 42-55 77 0 59 57 103 134 103 43 0 86-13 119-37" stroke="url(#g1)" stroke-width="22" stroke-linecap="round"/>
+<path d="M523 239c26-41 84-68 148-68 93 0 166 52 166 124 0 71-72 123-166 123-66 0-124-26-149-69" stroke="url(#g1)" stroke-width="22" stroke-linecap="round"/>
+<path d="M940 245c-24-33-68-54-119-54-77 0-134 43-134 101 0 36 20 61 56 78l91 38c34 14 53 31 53 58 0 38-40 62-98 62-56 0-99-24-126-65" stroke="url(#g1)" stroke-width="22" stroke-linecap="round"/>
+</g>
+<text x="600" y="640" text-anchor="middle" fill="#eef5ff" font-size="72" font-family="Arial, Helvetica, sans-serif" letter-spacing="5">single-cell Commitment Scores</text>
+<text x="600" y="714" text-anchor="middle" fill="#aab7cb" font-size="26" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">scCS</text>
+</svg>

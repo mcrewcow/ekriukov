@@ -22,8 +22,8 @@
     <a class="brand" href="#top" aria-label="Emil Kriukov home">
       <span class="brand-mark">EK</span>
       <span class="brand-copy">
-        <strong>Emil Kriukov</strong>
-        <small>Computational biology · vision restoration</small>
+        <strong>Vision restoration</strong>
+        <small>Computational biology portfolio</small>
       </span>
     </a>
     <nav class="nav" aria-label="Primary navigation">
@@ -43,7 +43,6 @@
         <div class="hero-identity glass-subtle">
           <img class="profile-thumb" src="assets/emil-profile.webp" alt="Portrait of Emil Kriukov" />
           <div>
-            <p class="identity-kicker">This is Emil Kriukov</p>
             <h2 class="identity-name">Emil Kriukov</h2>
             <p class="identity-role">Computational biologist · single-cell atlases · retinal systems</p>
           </div>
@@ -91,7 +90,7 @@
 
       <div class="northstar-grid">
         <article class="glass northstar-visual reveal interactive-card" tabindex="0">
-          <img src="assets/eye1k-atlas.webp" alt="Abstract visualization of integrated retinal and optic-nerve single-cell atlases" loading="lazy" />
+          <img class="data-figure eye1k-figure" src="assets/eye1k-user.webp" alt="Eye1k atlas UMAP-style visualization of retinal and optic-nerve related cell states" loading="lazy" />
           <div class="northstar-image-shade" aria-hidden="true"></div>
           <div class="northstar-caption"><span>mouse retina</span><i>+</i><span>optic nerve</span><i>×</i><span>conditions</span></div>
         </article>
@@ -127,8 +126,8 @@
 
       <div class="project-grid">
         <article class="project-card glass feature project-card-visual reveal interactive-card" tabindex="0">
-          <div class="project-image-wrap">
-            <img src="assets/sccs-commitment.webp" alt="Abstract visualization of branching cell-fate trajectories and quantitative commitment scores" loading="lazy" />
+          <div class="project-image-wrap logo-wrap">
+            <img class="logo-figure" src="assets/sccs-logo.svg" alt="scCS logo and wordmark" loading="lazy" />
           </div>
           <div class="project-body">
             <div class="card-topline"><span class="tag live">METHOD</span><span>2026 →</span></div>
@@ -141,8 +140,8 @@
         </article>
 
         <article class="project-card glass feature project-card-visual reveal interactive-card" tabindex="0">
-          <div class="project-image-wrap">
-            <img class="hroca-image" src="assets/hero-retina-data.webp" alt="Abstract retinal tissue and single-cell data visualization" loading="lazy" />
+          <div class="project-image-wrap light-wrap">
+            <img class="data-figure hroca-figure" src="assets/hroca-user.webp" alt="HROCA annotated UMAP of human retinal organoid cell states" loading="lazy" />
           </div>
           <div class="project-body">
             <div class="card-topline"><span class="tag live">ATLAS</span><span>ongoing</span></div>
@@ -189,6 +188,8 @@
             <div class="role-heading"><div><span class="tag live">CURRENT</span><h3>Lead Bioinformatician</h3><p>University of Pittsburgh</p></div></div>
             <p>Leading Eye1k, developing scCS, coordinating a five-member bioinformatics team, and supporting computational work across internal and collaborative studies.</p>
             <div class="paper-list">
+              <div class="paper-static"><span>Eye1k — pan-conditional mouse atlas of retina and optic nerve</span><small>ongoing flagship atlas project</small></div>
+              <div class="paper-static"><span>HROCA — Human Retinal Organoid Cell Atlas</span><small>ongoing atlas project</small></div>
               <a href="https://doi.org/10.64898/2026.07.27.741070v1" target="_blank" rel="noopener"><span>Quantitative assessment of cell-fate commitment using scCS</span><small>bioRxiv · 2026 ↗</small></a>
               <div class="paper-static"><span>NF1 optic glioma at single-cell resolution</span><small>Communications Biology · in review, 2026</small></div>
               <div class="paper-static"><span>Human optic nerve multi-omics atlas</span><small>Nature Genetics · in review, 2026</small></div>
@@ -358,11 +359,13 @@
         </div>
       </div>
 
-      <div class="toolbox-grid">
+      <div class="toolbox-grid toolbox-grid-expanded">
         <article class="glass tool-card reveal interactive-card" tabindex="0"><span>01</span><h3>Single-cell at scale</h3><p>Scanpy · Seurat · RAPIDS-singlecell · Cell Ranger · scVI · scArches · scPoli</p></article>
         <article class="glass tool-card reveal interactive-card" tabindex="0"><span>02</span><h3>Fate & dynamics</h3><p>RNA velocity · CellRank · PAGA · Monocle3 · Slingshot · CytoTRACE · scFates</p></article>
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>03</span><h3>Networks & interaction</h3><p>SCENIC · CellChat · gene-regulatory networks · cell-cell communication</p></article>
-        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>04</span><h3>GPU + ML</h3><p>PyTorch · JAX · Ray · cuML · RAPIDS · large-scale integration and predictive modeling</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>03</span><h3>Regulatory & interaction analysis</h3><p>SCENIC · CellChat · gene-regulatory networks · ligand–receptor and cell-cell communication</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>04</span><h3>Spatial + imaging omics</h3><p>Spatial transcriptomics · imaging-based analysis · RNA Scope · microscopy-linked quantification</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>05</span><h3>Epigenomics + bulk omics</h3><p>Bulk RNA-seq · ChIP-seq · ATAC-seq · general multi-omics integration and comparative analysis</p></article>
+        <article class="glass tool-card reveal interactive-card" tabindex="0"><span>06</span><h3>Wet-lab + microscopy</h3><p>Cell culture · retinal organoids · IHC · confocal, Airyscan, and light-sheet microscopy · tissue clearing</p></article>
       </div>
     </section>
 

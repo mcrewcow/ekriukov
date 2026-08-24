@@ -8,8 +8,9 @@ A dependency-free static research portfolio designed for GitHub Pages. The curre
 - `styles.css` — dark liquid-glass design and responsive layout
 - `script.js` — animated background and scroll-reveal effects
 - `assets/hero-retina-data.webp` — hero artwork
-- `assets/eye1k-atlas.webp` — Eye1k project artwork
-- `assets/sccs-commitment.webp` — scCS project artwork
+- `assets/eye1k-user.webp` — Eye1k user-provided atlas figure
+- `assets/hroca-user.webp` — HROCA user-provided atlas figure
+- `assets/sccs-logo.svg` — scCS wordmark / logo card
 - `assets/Emil_Kriukov_CV.pdf` — downloadable CV
 - `assets/Emil_Kriukov_CV.docx` — source CV document
 - `assets/emil-profile.webp` — profile photo
@@ -41,8 +42,9 @@ mcrewcow.github.io/
     ├── emil-profile.webp
     ├── favicon.svg
     ├── hero-retina-data.webp
-    ├── eye1k-atlas.webp
-    └── sccs-commitment.webp
+    ├── eye1k-user.webp
+    ├── hroca-user.webp
+    └── sccs-logo.svg
 ```
 
 ## Publish on GitHub Pages
