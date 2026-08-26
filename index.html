@@ -117,7 +117,11 @@
   <div class="noise" aria-hidden="true"></div>
 
   <header class="site-header glass" id="top">
-    <nav class="nav" aria-label="Primary navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="menu-toggle-icon" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span>Sections</span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Primary navigation">
       <a href="#goal">Eye1k</a>
       <a href="#projects">Projects</a>
       <a href="#timeline">Timeline</a>
@@ -163,16 +167,17 @@
         <img class="hero-art" src="assets/hero-retina-data.webp" alt="Abstract illustration of retinal tissue transforming into single-cell data, trajectories, and computational networks" />
         <div class="hero-panel-shade" aria-hidden="true"></div>
         <div class="hero-panel-content">
-          <div class="panel-kicker">Research snapshot · Aug 2026 CV</div>
+          <div class="panel-kicker">Research snapshot</div>
           <div class="metric-grid">
             <div class="metric"><strong>29</strong><span>papers</span></div>
             <div class="metric"><strong>6</strong><span>first / co-first</span></div>
-            <div class="metric"><strong>465</strong><span>citations</span></div>
-            <div class="metric"><strong>11</strong><span>h-index</span></div>
+            <div class="metric"><strong id="scholar-citations">465</strong><span>citations</span></div>
+            <div class="metric"><strong id="scholar-hindex">11</strong><span>h-index</span></div>
           </div>
           <div class="hero-visual-caption">
             <span>retina</span><i>→</i><span>single cells</span><i>→</i><span>models</span>
           </div>
+          <div class="stats-note" id="scholar-status">Citations &amp; h-index · CV fallback</div>
         </div>
       </aside>
     </section>
@@ -408,7 +413,7 @@
             <li>Sergio Pestun — High School Student (2023)</li>
             <li>Sthavir Vinjamuri — College Student (2024–2025)</li>
             <li>Everett Labrecque — High School / College Student (2024–present)</li>
-            <li>Chien-Yu Zona Lin — Master’s Student (2025–present)</li>
+            <li>Chien-Yu Lin — Master’s Student (2025–present)</li>
             <li>Anil Upreti — Postdoc (2025–2026)</li>
           </ul>
         </article>
